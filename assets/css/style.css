@@ -55,6 +55,94 @@ font-family: 'Playfair Display', serif;
 font-family: 'Poppins', sans-serif;
 */
 
+.pricingTable{
+    background: #fff;
+    font-family: 'Poppins', sans-serif;
+    text-align: center;
+    padding: 4px 4px 25px;
+    transition: all 0.3s ease;
+}
+.pricingTable:hover{ box-shadow: 0 0 20px -5px rgba(0, 0, 0, 0.5); }
+.pricingTable .pricingTable-header{
+    background: #22A6B2;
+    text-align: center;
+    text-transform: uppercase;
+    padding: 14px 0 4px;
+    margin: 0 0 25px;
+}
+.pricingTable .title{
+    color: #fff;
+    font-family: 'Teko', sans-serif;
+    font-size: 65px;
+    font-weight: 300;
+    line-height: 65px;
+    letter-spacing: 1px;
+    margin: 0;
+}
+.pricingTable .price-value{
+    color: #555;
+    font-weight: 300;
+    margin: 0 0 20px;
+    display: block;
+}
+.pricingTable .price-value .currency,
+.pricingTable .price-value .amount{
+    font-family: 'Teko', sans-serif;
+    font-size: 75px;
+    line-height: 60px;
+    display: inline-block;
+}
+.pricingTable .price-value .duration{
+    font-size: 14px;
+    font-weight: 500;
+    text-transform: uppercase;
+    margin: -5px 0 0;
+    display: block;
+}
+.pricingTable .pricing-content{
+    padding: 0;
+    margin: 0 -19px 20px;
+    list-style: none;
+}
+.pricingTable .pricing-content li{
+    color: #111;
+    background: #EEEEEE;
+    font-size: 17px;
+    font-weight: 500;
+    line-height: 40px;
+    text-transform: capitalize;
+    padding: 5px 24px;
+}
+.pricingTable .pricing-content li:nth-child(even){ background: transparent; }
+
+.pricingTable .pricingTable-signup a{
+    color: #fff;
+    font-size: 25px;
+    text-transform: uppercase;
+    padding: 4px 35px;
+    display: inline-block;
+    transition: all 0.3s ease;
+}
+.pricingTable .pricingTable-signup a:hover {
+    text-shadow: 4px 4px 1px rgba(0, 0, 0, 0.4);
+    box-shadow: 4px 4px 0 rgba(0,0,0,0.15),7px 7px 0 rgba(0,0,0,0.1);
+}
+.pricingTable.green{ border-color: #42A147; }
+.pricingTable.green .pricingTable-header,
+.pricingTable.green .pricingTable-signup a{
+    background: #42A147;
+}
+.pricingTable.magenta{ border-color: #DD2A55; }
+.pricingTable.magenta .pricingTable-header,
+.pricingTable.magenta .pricingTable-signup a{
+    background: #DD2A55;
+}
+@media only screen and (max-width: 990px){
+    .pricingTable{ margin-bottom: 40px; }
+}
+License Terms
+
+
 :root {
 	--thm-font: 'Poppins', sans-serif;
 	--heading-font: 'Playfair Display', serif;
@@ -649,6 +737,9 @@ h6 {
 	margin-right: 10px;
 }
 
+html {
+    scroll-behavior: smooth !important;
+}
 
 /*--------------------------------------------------------------
 # Main Menu
