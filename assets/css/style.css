@@ -1721,11 +1721,10 @@ html {
 .footer-widget__social {
 	display: flex;
 	align-items: center;
-	margin-top: 36px;
+	margin-left: 45%;
 }
 
 .footer-widget__social a {
-	display: flex;
 	align-items: center;
 	text-align: center;
 	justify-content: center;
@@ -1738,9 +1737,6 @@ html {
 	transition: all 500ms ease;
 }
 
-.footer-widget__social a+a {
-	margin-left: 10px;
-}
 
 .footer-widget__social a:nth-child(1) {
 	color: #16599b;
@@ -1941,15 +1937,12 @@ html {
 	padding-top: 40.5px;
 	padding-bottom: 40.5px;
 	background-color: #fff;
-	position: relative;
-	box-shadow: 0px 2px 7px 0px rgba(29, 47, 60, 0.18);
 	margin-bottom: -62px;
 	z-index: 10;
+	break-after: auto;
 }
 
-.cta-two .container {
-	position: relative;
-}
+
 
 .cta-two .container::before {
 	content: '';
